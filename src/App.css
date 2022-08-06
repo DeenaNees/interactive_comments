@@ -1,0 +1,77 @@
+@import url(https://fonts.google.com/specimen/Rubik);
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: hsl(223, 19%, 93%);
+  font-family: "Rubik", sans-serif;
+  justify-content: center;
+}
+
+.comments__table {
+  border-spacing: 20px;
+  padding: 30px;
+  border-collapse: separate;
+}
+
+.comment__content {
+  padding: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(211, 10%, 45%);
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  max-width: 700px;
+}
+
+.comment__container {
+  background-color: white;
+  border-radius: 15px;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.score__container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  position: relative;
+  width: 40px;
+  max-height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.score__number {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(238, 40%, 52%);
+  font-weight: 700;
+  background-color: hsl(223, 19%, 93%);
+}
+
+.score__button {
+  border: none;
+}
+
+.reply__container {
+  display: grid;
+  grid-template-columns: auto auto;
+  color: hsl(238, 40%, 52%);
+  font-weight: 700;
+  max-width: 100px;
+}
+
+div {
+  border-style: solid;
+}
+
+/* .user__container {
+  max-width: 400px;
+} */
