@@ -1,9 +1,18 @@
 import "./App.css";
-import { commentsData } from "./data.js";
 import Comments from "./components/Comments";
+import { CommentsProvider, useComments } from "./context/CommentsContext";
 
 function App() {
-  return <Comments comments={commentsData.comments}></Comments>;
+  return (
+    <CommentsProvider>
+      <Wrapper />;
+    </CommentsProvider>
+  );
 }
+
+const Wrapper = () => {
+  const { comments } = useComments();
+  return <Comments comments={comments} />;
+};
 
 export default App;
